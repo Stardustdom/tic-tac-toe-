@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-color: #222;
+  
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+  }
+p {
+  margin-bottom: -10px;
+}
+.ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row {
+  display: flex;
+}
+.cell {
+  border: none;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.cell:active {
+  outline: none;
+}
+/* 3*3 Grid */
+#b1 {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+#b2 {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    color:#222
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+#b3 {
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+#b4 {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+#b5 {
+  border: 1px solid gray;
+}
+
+#b6 {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+#b7 {
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+#b8 {
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+#b9 {
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+}
+/* Reset Button */
+#but {
+  
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 120px;
+  height: 80px;
+  border: 1px solid dodgerblue;
+  margin-left: auto;
+  border-radius: 8px;
+  font-family: inherit;
+  background-color: rgb(228, 208, 208);
+  color: dodgerblue;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Player turn space */
+#print {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(235, 237, 240);
+  
+  font-size: 40px;
+}
+
+/* Main Container */
+#main {
+  text-align: center;
+}
+
+/* Game Instruction Text */
+#ins {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: dodgerblue;
+}
